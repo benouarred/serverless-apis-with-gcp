@@ -90,7 +90,7 @@ docker push gcr.io/$GCP_PROJECT/app-inventory
 * Check that the image is stored to GCR
 TOOLS > Container Registry > Images 
 * (Optional) Enable Vulnerability Scanning
-TOOLS > Container Registry > Images 
+TOOLS > Container Registry > Parameters 
 Click on the blue button 'Enable Vulnerability scanning'
 You should re-push the image to run the scanning
 ```
