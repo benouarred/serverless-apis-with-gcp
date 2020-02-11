@@ -32,9 +32,9 @@ gcloud services enable firestore.googleapis.com
     - Endpoints
   
 # 1. Init Datastore (NoSql database)
-* Create a new App Engine app : this will automatiquely create : 
+* When you create a new App Engine app, this will automatiquely create : 
     - Datastore instance
-    - Two buckets ($GCP_PROJECT.appspot.com and staging.$GCP_PROJECT.appspot.com) --> we will be using the first one
+    - Two Cloud storage buckets ($GCP_PROJECT.appspot.com and staging.$GCP_PROJECT.appspot.com) --> we will be using the first one
 ```
 gcloud app create --region=europe-west
 
@@ -78,8 +78,8 @@ git clone https://github.com/Sfeir/serverless-apis-with-gcp.git
 ```
 * Explore the application file app.go and the associated docker file
 ```
-cat app.go
-cat Dockerfile
+cat ~/serverless-apis-with-gcp/run/app.go
+cat ~/serverless-apis-with-gcp/run/Dockerfile
 ```
 * Build the image and push it to the container registry
 ```
